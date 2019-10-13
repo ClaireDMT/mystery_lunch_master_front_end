@@ -1,0 +1,48 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #fafafa;
+}
+
+hr {
+  border-color: rgba(#5755d9, .1);
+  margin: 30px 0;
+}
+
+#app {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.app {
+  &__title {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+  }
+}
+
+.card {
+  strong,
+  small {
+    display: block;
+  }
+
+  .member {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}

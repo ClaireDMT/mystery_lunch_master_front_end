@@ -1,12 +1,19 @@
+import '@/assets/stylesheets/spectre.min.css'
+import '@/assets/stylesheets/styles.scss'
+
 import Vue from 'vue'
+
+import router from './router/'
+import store from './store/'
+
 import App from './App.vue'
-import router from './router'
-import store from './store'
 
 Vue.config.productionTip = false
 
-new Vue({
+const main = new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
+
+export default main
