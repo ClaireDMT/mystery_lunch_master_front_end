@@ -2,7 +2,7 @@
   <div class="card col-6">
     <div class="card-header">
       <h3 class="text-primary">
-        Group {{ type }}
+        Group {{ group.type }}
       </h3>
       <div class="divider" />
     </div>
@@ -18,8 +18,7 @@
 
 <script>
 export default {
-  props: {
-    type: String
-  }
+  props: ['group'],
+
 }
 </script>
